@@ -1,0 +1,10 @@
+char *strdup(const char *str);
+int *readFromFile(int fd);
+HuffmanNode *createHuffTree(LinkedList *l, int *freqlist);
+void createCodeHelper(HuffmanNode *node, char **codeTable, char *code);
+void createCode(HuffmanNode *node, char **codeTable);
+char **createcodeArray(HuffmanNode *node, char **codeTable);
+char **createCodeArray(HuffmanNode *root);
+void printCodeTable(char **codeTable);
+void freeEverythingHuffman(HuffmanNode *node);
+void freeCodeTable(char **codeTable);
